@@ -17,6 +17,8 @@ const DEFAULT_FILTERS: FilterState = {
   inStockOnly: false,
 };
 
+const PRODUCTS_PER_PAGE = 12;
+
 function isValidCategory(value: string | null): value is Category {
   return !!value && (CATEGORY_LIST as string[]).includes(value);
 }
@@ -34,6 +36,7 @@ export default function ShopClient() {
     brands: initialBrandParam ? [initialBrandParam] : [],
   }));
   const [sort, setSort] = useState<SortValue>(initialSortParam || "featured");
+  const [page, setPage] = useState(1);
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
 
   const brandOptions = useMemo(
@@ -42,11 +45,18 @@ export default function ShopClient() {
   );
 
   function handleFilterChange(next: Partial<FilterState>) {
+    setPage(1);
     setFilters((prev) => ({ ...prev, ...next }));
   }
 
   function handleReset() {
+    setPage(1);
     setFilters(DEFAULT_FILTERS);
+  }
+
+  function handleSortChange(next: SortValue) {
+    setPage(1);
+    setSort(next);
   }
 
   const filtered = useMemo(() => {
@@ -91,6 +101,13 @@ export default function ShopClient() {
     return list;
   }, [filters, sort, dealsOnly]);
 
+  const pageCount = Math.ceil(filtered.length / PRODUCTS_PER_PAGE);
+  const currentPage = Math.min(page, Math.max(pageCount, 1));
+  const paginatedProducts = filtered.slice(
+    (currentPage - 1) * PRODUCTS_PER_PAGE,
+    currentPage * PRODUCTS_PER_PAGE
+  );
+
   const heading = dealsOnly
     ? "Deals & Offers"
     : filters.category !== "all"
@@ -102,7 +119,16 @@ export default function ShopClient() {
       <div className="mb-8">
         <p className="eyebrow mb-2">Shop</p>
         <h1 className="font-display text-3xl text-ink sm:text-4xl">{heading}</h1>
-        <p className="mt-2 text-sm text-muted">{filtered.length} products</p>
+        <p className="mt-2 text-sm text-muted">
+          {filtered.length} products
+          {filtered.length > 0 && (
+            <span>
+              {" "}
+              · Showing {(currentPage - 1) * PRODUCTS_PER_PAGE + 1}–
+              {Math.min(currentPage * PRODUCTS_PER_PAGE, filtered.length)}
+            </span>
+          )}
+        </p>
       </div>
 
       <div className="flex flex-col gap-8 lg:flex-row">
@@ -127,11 +153,47 @@ export default function ShopClient() {
               Filter
             </button>
             <div className="ml-auto">
-              <SortDropdown value={sort} onChange={setSort} />
+              <SortDropdown value={sort} onChange={handleSortChange} />
             </div>
           </div>
 
-          <ProductGrid products={filtered} />
+          <ProductGrid products={paginatedProducts} />
+
+          {pageCount > 1 && (
+            <nav aria-label="Shop pagination" className="mt-10 flex flex-wrap items-center justify-center gap-2">
+              <button
+                type="button"
+                onClick={() => setPage((current) => Math.max(current - 1, 1))}
+                disabled={currentPage === 1}
+                className="border border-line/30 px-3 py-2 text-sm font-medium text-ink transition-colors hover:border-brand-blue hover:text-brand-blue disabled:cursor-not-allowed disabled:opacity-40"
+              >
+                Previous
+              </button>
+              {Array.from({ length: pageCount }, (_, index) => index + 1).map((pageNumber) => (
+                <button
+                  key={pageNumber}
+                  type="button"
+                  onClick={() => setPage(pageNumber)}
+                  aria-current={currentPage === pageNumber ? "page" : undefined}
+                  className={
+                    currentPage === pageNumber
+                      ? "border border-brand-blue bg-brand-blue px-3 py-2 text-sm font-semibold text-white"
+                      : "border border-line/30 px-3 py-2 text-sm font-medium text-ink transition-colors hover:border-brand-blue hover:text-brand-blue"
+                  }
+                >
+                  {pageNumber}
+                </button>
+              ))}
+              <button
+                type="button"
+                onClick={() => setPage((current) => Math.min(current + 1, pageCount))}
+                disabled={currentPage === pageCount}
+                className="border border-line/30 px-3 py-2 text-sm font-medium text-ink transition-colors hover:border-brand-blue hover:text-brand-blue disabled:cursor-not-allowed disabled:opacity-40"
+              >
+                Next
+              </button>
+            </nav>
+          )}
         </div>
       </div>
 

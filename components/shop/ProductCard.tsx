@@ -17,7 +17,7 @@ export default function ProductCard({ product }: { product: Product }) {
 
   return (
     <div className="group relative flex flex-col border border-line/20 bg-white transition-shadow hover:shadow-card">
-      <div className="relative aspect-[4/5] w-full overflow-hidden">
+      <div className="relative aspect-[4/5] w-full overflow-hidden sm:aspect-[4/5]">
         <Link href={`/product/${product.slug}`} className="block h-full w-full">
           <PlaceholderImage
             image={product.image}
@@ -38,7 +38,7 @@ export default function ProductCard({ product }: { product: Product }) {
           onClick={() => toggle(product.id, product.name)}
           aria-label={wishlisted ? "Remove from wishlist" : "Add to wishlist"}
           aria-pressed={wishlisted}
-          className="absolute right-2.5 top-2.5 flex h-8 w-8 items-center justify-center bg-white/90 text-ink transition-colors hover:bg-white"
+          className="absolute right-2 top-2 flex h-8 w-8 items-center justify-center bg-white/90 text-ink transition-colors hover:bg-white sm:right-2.5 sm:top-2.5"
         >
           <svg
             viewBox="0 0 20 20"
@@ -60,19 +60,19 @@ export default function ProductCard({ product }: { product: Product }) {
         </button>
       </div>
 
-      <div className="flex flex-1 flex-col gap-1.5 p-3.5">
-        <span className="text-[11px] font-semibold uppercase tracking-wide text-muted">
+      <div className="flex min-w-0 flex-1 flex-col gap-1.5 p-3 sm:gap-2 sm:p-3.5">
+        <span className="truncate text-[10px] font-semibold uppercase tracking-wide text-muted sm:text-[11px]">
           {product.brand}
         </span>
         <Link
           href={`/product/${product.slug}`}
-          className="line-clamp-2 font-body text-sm font-medium text-ink hover:text-brand-blue"
+          className="line-clamp-2 min-h-[2.5rem] font-body text-[13px] font-medium leading-5 text-ink hover:text-brand-blue sm:text-sm"
         >
           {product.name}
         </Link>
         <Rating value={product.rating} count={product.reviewsCount} />
-        <div className="mt-1 flex items-baseline gap-2">
-          <span className="text-sm font-semibold text-ink">{formatKES(product.price)}</span>
+        <div className="mt-1 flex flex-wrap items-baseline gap-x-2 gap-y-0.5">
+          <span className="text-[13px] font-semibold text-ink sm:text-sm">{formatKES(product.price)}</span>
           {product.oldPrice && (
             <span className="text-xs text-muted line-through">{formatKES(product.oldPrice)}</span>
           )}
@@ -81,7 +81,7 @@ export default function ProductCard({ product }: { product: Product }) {
         <button
           type="button"
           onClick={() => addItem(product.id)}
-          className="mt-2 border border-ink py-2 text-xs font-semibold tracking-wide text-ink transition-colors hover:bg-ink hover:text-white sm:hidden"
+          className="mt-2 w-full border border-ink py-2.5 text-[11px] font-semibold tracking-wide text-ink transition-colors hover:bg-ink hover:text-white sm:hidden"
         >
           ADD TO CART
         </button>

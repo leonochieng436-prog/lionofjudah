@@ -66,12 +66,12 @@ export default function ProductGrid({ products, horizontal = false }: { products
     return (
       <div
         ref={scrollerRef}
-        className="scrollbar-none flex snap-x snap-mandatory gap-3 overflow-x-auto pb-4 sm:gap-5"
+        className="scrollbar-none -mx-1 flex snap-x snap-mandatory gap-2 overflow-x-auto px-1 pb-4 sm:mx-0 sm:gap-5 sm:px-0"
       >
         {products.map((product) => (
           <div
             key={product.id}
-            className="w-[78vw] shrink-0 snap-start sm:w-[42vw] lg:w-[calc((100%-3.75rem)/4)]"
+            className="w-[72vw] shrink-0 snap-start sm:w-[42vw] lg:w-[calc((100%-3.75rem)/4)]"
           >
             <ProductCard product={product} />
           </div>
