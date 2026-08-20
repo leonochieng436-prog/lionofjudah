@@ -1,0 +1,89 @@
+/* 
+   Copy and paste this code directly into your platform's Custom CSS area.
+   This imports the recommended fonts from Google Fonts and applies them to your shop.
+*/
+
+/* 1. IMPORT RECOMMENDED FONTS FROM GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&family=Tenor+Sans&display=swap');
+
+/* ==========================================================================
+   STYLE DIRECTION 1: HIGH-END LUXURY & EDITORIAL (Playfair Display + Montserrat)
+   ========================================================================== */
+
+/* Headings (Product Titles, Section Headers, Banners) */
+.luxury-heading, 
+.luxury-theme h1, .luxury-theme h2, .luxury-theme h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: capitalize;
+}
+
+/* Body Text, Product Descriptions, and Meta Info */
+.luxury-body, 
+.luxury-theme p, .luxury-theme span, .luxury-theme li {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    letter-spacing: 0.3px;
+}
+
+/* Add-to-Cart Buttons, Prices, and Navigation Links */
+.luxury-cta, 
+.luxury-theme button, .luxury-theme .price, .luxury-theme .nav-link {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+
+/* ==========================================================================
+   STYLE DIRECTION 2: CLEAN, MODERN & K-BEAUTY (Inter)
+   ========================================================================== */
+
+/* Headings (Bold, Geometric, Minimalist) */
+.modern-heading, 
+.modern-theme h1, .modern-theme h2, .modern-theme h3 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+/* Body Text & Compliance Data (Highly legible, perfect for ingredients) */
+.modern-body, 
+.modern-theme p, .modern-theme span, .modern-theme li, .modern-theme .ingredients {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+/* Prices and Checkout Buttons */
+.modern-cta, 
+.modern-theme button, .modern-theme .price {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0px;
+}
+
+
+/* ==========================================================================
+   STYLE DIRECTION 3: SOFT, FEMININE & BOUTIQUE (Tenor Sans + Montserrat/Inter)
+   ========================================================================== */
+
+/* Headings (Elegant, curved, airy sans-serif) */
+.boutique-heading, 
+.boutique-theme h1, .boutique-theme h2, .boutique-theme h3 {
+    font-family: 'Tenor Sans', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Body Text and Descriptions */
+.boutique-body, 
+.boutique-theme p, .boutique-theme span {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    line-height: 1.7;
+}

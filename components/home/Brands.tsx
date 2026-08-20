@@ -1,58 +1,25 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useRef } from "react";
-import { PRODUCTS } from "@/lib/products";
+import { useMemo } from "react";
 import SectionHeading from "@/components/ui/SectionHeading";
-import PlaceholderImage from "@/components/ui/PlaceholderImage";
 
-const BRANDS = Array.from(new Set(PRODUCTS.map((product) => product.brand)));
+const BRANDS = [
+  { name: "The Ordinary", image: "/logo/theordinarylogo.jpg" },
+  { name: "Dr.Rashel", image: "/logo/rashellogo.png" },
+  { name: "Garnier", image: "/logo/garnierlogo.jpg" },
+  { name: "Simple", image: "/logo/simplelogo.jpg" },
+  { name: "Cosrx", image: "/logo/cosrxlogo.jpg" },
+  { name: "Roniki", image: "/logo/ronikilogo.avif" },
+  { name: "Nivea", image: "/logo/nivealogo.jpg" },
+];
 
 export default function Brands() {
-  const scrollerRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const scroller = scrollerRef.current;
-    if (!scroller || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-
-    let animationFrame: number;
-    let paused = false;
-    let lastTimestamp = 0;
-
-    const animate = (timestamp: number) => {
-      if (!lastTimestamp) lastTimestamp = timestamp;
-      if (!paused) {
-        scroller.scrollLeft += (timestamp - lastTimestamp) * 0.035;
-        if (scroller.scrollLeft >= scroller.scrollWidth - scroller.clientWidth) scroller.scrollLeft = 0;
-      }
-      lastTimestamp = timestamp;
-      animationFrame = requestAnimationFrame(animate);
-    };
-    const pause = () => {
-      paused = true;
-    };
-    const resume = () => {
-      paused = false;
-      lastTimestamp = 0;
-    };
-
-    scroller.addEventListener("mouseenter", pause);
-    scroller.addEventListener("mouseleave", resume);
-    scroller.addEventListener("focusin", pause);
-    scroller.addEventListener("focusout", resume);
-    animationFrame = requestAnimationFrame(animate);
-
-    return () => {
-      cancelAnimationFrame(animationFrame);
-      scroller.removeEventListener("mouseenter", pause);
-      scroller.removeEventListener("mouseleave", resume);
-      scroller.removeEventListener("focusin", pause);
-      scroller.removeEventListener("focusout", resume);
-    };
-  }, []);
+  const marqueeBrands = useMemo(() => [...BRANDS, ...BRANDS], []);
 
   return (
-    <section className="section-pad bg-brand-light/40">
+    <section className="section-pad overflow-hidden bg-white">
       <div className="container-edge">
         <div className="flex flex-wrap items-end justify-between gap-4">
           <SectionHeading eyebrow="Names You Can Trust" title="Brands" />
@@ -60,25 +27,25 @@ export default function Brands() {
             View All →
           </Link>
         </div>
-        <div ref={scrollerRef} className="scrollbar-none mt-10 flex snap-x gap-3 overflow-x-auto pb-4 sm:gap-5">
-          {BRANDS.map((brand) => {
-            const product = PRODUCTS.find((item) => item.brand === brand)!;
-            return (
+        <div className="mt-10 overflow-hidden" aria-label="Featured brands">
+          <div className="brands-marquee flex w-max items-center gap-8 hover:[animation-play-state:paused] sm:gap-12">
+            {marqueeBrands.map((brand, index) => (
               <Link
-                key={brand}
-                href={`/shop?brand=${encodeURIComponent(brand)}`}
-                className="group relative flex aspect-[4/3] w-[72vw] shrink-0 snap-start items-end overflow-hidden border border-line/15 sm:w-[35vw] lg:w-[22vw]"
+                key={`${brand.name}-${index}`}
+                href={`/shop?brand=${encodeURIComponent(brand.name)}`}
+                aria-label={`Shop ${brand.name}`}
+                className="flex h-24 w-36 shrink-0 items-center justify-center sm:h-28 sm:w-44"
               >
-                <PlaceholderImage
-                  label={brand}
-                  className="absolute inset-0 h-full w-full transition-transform duration-500 group-hover:scale-105"
-                  image={product.image}
+                <Image
+                  src={brand.image}
+                  alt={`${brand.name} logo`}
+                  width={176}
+                  height={112}
+                  className="max-h-20 w-auto max-w-full object-contain sm:max-h-24"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/10 to-transparent" />
-                <span className="relative z-10 p-4 font-display text-lg font-semibold text-white">{brand}</span>
               </Link>
-            );
-          })}
+            ))}
+          </div>
         </div>
       </div>
     </section>

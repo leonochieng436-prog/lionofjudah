@@ -12,8 +12,8 @@ import PromoBanner from "@/components/home/PromoBanner";
 import WhyShopWithUs from "@/components/home/WhyShopWithUs";
 import BeautyEdit from "@/components/home/BeautyEdit";
 import Reviews from "@/components/home/Reviews";
-import Newsletter from "@/components/home/Newsletter";
-import SocialMedia from "@/components/home/SocialMedia";
+
+
 
 export default function HomePage() {
   return (
@@ -32,8 +32,8 @@ export default function HomePage() {
       <WhyShopWithUs />
       <BeautyEdit />
       <Reviews />
-      <Newsletter />
-      <SocialMedia />
+   
+      
     </>
   );
 }

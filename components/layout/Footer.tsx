@@ -1,11 +1,13 @@
 import Link from "next/link";
+import { FaFacebookF, FaInstagram, FaTiktok, FaWhatsapp } from "react-icons/fa";
 import { CATEGORY_LABELS, CATEGORY_LIST } from "@/lib/utils";
+import { BUSINESS } from "@/lib/business";
 
 const SOCIALS = [
-  { label: "Instagram", href: "https://instagram.com" },
-  { label: "TikTok", href: "https://tiktok.com" },
-  { label: "Facebook", href: "https://facebook.com" },
-  { label: "WhatsApp", href: "https://wa.me" },
+  { label: "Instagram", href: "https://instagram.com", icon: FaInstagram },
+  { label: "TikTok", href: "https://www.tiktok.com/@lionofjudahbeautyprod?is_from_webapp=1&sender_device=pc", icon: FaTiktok },
+  { label: "Facebook", href: "https://web.facebook.com/profile.php?id=61587636684396", icon: FaFacebookF },
+  { label: "WhatsApp", href: "https://wa.me/254793692936", icon: FaWhatsapp },
 ];
 
 export default function Footer() {
@@ -30,7 +32,7 @@ export default function Footer() {
                 className="flex h-8 w-8 items-center justify-center border border-white/20 text-[10px] font-semibold text-white/70 transition-colors hover:border-brand-blue hover:text-brand-blue"
                 aria-label={s.label}
               >
-                {s.label[0]}
+                <s.icon aria-hidden="true" className="h-4 w-4" />
               </a>
             ))}
           </div>
@@ -65,17 +67,17 @@ export default function Footer() {
           <ul className="flex flex-col gap-2.5 text-sm text-white/75">
             <li><Link href="/about" className="hover:text-brand-blue">Our Story</Link></li>
             <li><Link href="/about" className="hover:text-brand-blue">About Us</Link></li>
-            <li><Link href="/faq" className="hover:text-brand-blue">Privacy Policy</Link></li>
-            <li><Link href="/faq" className="hover:text-brand-blue">Terms &amp; Conditions</Link></li>
+            <li><Link href="/privacy-policy" className="hover:text-brand-blue">Privacy Policy</Link></li>
+            <li><Link href="/terms-and-conditions" className="hover:text-brand-blue">Terms &amp; Conditions</Link></li>
           </ul>
         </div>
 
         <div className="col-span-2 md:col-span-4 lg:col-span-1">
           <h3 className="mb-4 text-xs font-semibold uppercase tracking-wider text-white/50">Contact</h3>
           <ul className="flex flex-col gap-2.5 text-sm text-white/75">
-            <li>+254 700 000 000</li>
-            <li>hello@lionofjudahbeauty.co.ke</li>
-            <li>Nairobi, Kenya</li>
+            <li><a href={`tel:${BUSINESS.phone}`} className="hover:text-brand-blue">{BUSINESS.phone}</a></li>
+            <li><a href={`mailto:${BUSINESS.email}`} className="break-words hover:text-brand-blue">{BUSINESS.email}</a></li>
+            <li>{BUSINESS.address}</li>
             <li>Mon–Sat, 9am–6pm EAT</li>
           </ul>
         </div>

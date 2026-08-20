@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { buildGeneralInquiryMessage, buildWhatsAppUrl } from "@/lib/whatsapp";
+import { BUSINESS } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -23,11 +24,15 @@ export default function ContactPage() {
       <div className="mx-auto mt-14 grid max-w-3xl grid-cols-1 gap-6 sm:grid-cols-3">
         <div className="border border-line/15 p-6 text-center">
           <h3 className="text-xs font-semibold uppercase tracking-wide text-muted">Phone / WhatsApp</h3>
-          <p className="mt-2 font-display text-lg text-ink">+254 700 000 000</p>
+          <a href={`tel:${BUSINESS.phone}`} className="mt-2 block font-display text-lg text-ink hover:text-brand-blue">
+            {BUSINESS.phone}
+          </a>
         </div>
         <div className="border border-line/15 p-6 text-center">
           <h3 className="text-xs font-semibold uppercase tracking-wide text-muted">Email</h3>
-          <p className="mt-2 font-display text-lg text-ink">hello@lionofjudahbeauty.co.ke</p>
+          <a href={`mailto:${BUSINESS.email}`} className="mt-2 block break-words font-display text-lg text-ink hover:text-brand-blue">
+            {BUSINESS.email}
+          </a>
         </div>
         <div className="border border-line/15 p-6 text-center">
           <h3 className="text-xs font-semibold uppercase tracking-wide text-muted">Hours</h3>
@@ -42,7 +47,7 @@ export default function ContactPage() {
           </svg>
           MESSAGE US ON WHATSAPP
         </a>
-        <p className="mt-4 text-xs text-muted">Nairobi, Kenya</p>
+        <p className="mt-4 text-xs text-muted">{BUSINESS.address}</p>
       </div>
     </div>
   );

@@ -41,17 +41,11 @@ export function WishlistProvider({ children }: { children: React.ReactNode }) {
 
   const toggle = useCallback(
     (productId: string, productName?: string) => {
-      setIds((prev) => {
-        const exists = prev.includes(productId);
-        if (exists) {
-          showToast(`${productName || "Item"} removed from wishlist`);
-          return prev.filter((id) => id !== productId);
-        }
-        showToast(`${productName || "Item"} added to wishlist`);
-        return [...prev, productId];
-      });
+      const exists = ids.includes(productId);
+      setIds(exists ? ids.filter((id) => id !== productId) : [...ids, productId]);
+      showToast(`${productName || "Item"} ${exists ? "removed from" : "added to"} wishlist`);
     },
-    [showToast]
+    [ids, showToast]
   );
 
   const remove = useCallback((productId: string) => {

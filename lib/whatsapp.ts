@@ -1,5 +1,6 @@
 import { CustomerDetails, OrderLineItem, Product } from "./types";
 import { formatKES } from "./utils";
+import { BUSINESS } from "./business";
 
 /**
  * The business WhatsApp number, read from env so it is never hardcoded
@@ -7,7 +8,7 @@ import { formatKES } from "./utils";
  * Falls back to a placeholder so the storefront still renders in demos.
  */
 export function getWhatsAppNumber(): string {
-  return process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "254700000000";
+  return process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || BUSINESS.whatsappNumber;
 }
 
 export function buildWhatsAppUrl(message: string): string {

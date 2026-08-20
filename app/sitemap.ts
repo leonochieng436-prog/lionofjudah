@@ -12,6 +12,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/contact",
     "/faq",
     "/shipping-returns",
+    "/privacy-policy",
+    "/terms-and-conditions",
     "/track-order",
   ].map((route) => ({
     url: `${siteUrl}${route}`,

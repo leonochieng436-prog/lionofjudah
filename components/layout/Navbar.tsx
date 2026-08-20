@@ -5,14 +5,47 @@ import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { useCart } from "@/context/CartContext";
 import { useWishlist } from "@/context/WishlistContext";
-import { CATEGORY_LABELS, CATEGORY_LIST } from "@/lib/utils";
 
-const NAV_LINKS = [
-  { href: "/shop", label: "Shop" },
-  { href: "/shop?category=skincare", label: "Skincare" },
-  { href: "/shop?category=bodycare", label: "Bodycare" },
-  { href: "/shop?category=haircare", label: "Haircare" },
-  { href: "/shop?category=deals", label: "Deals" },
+const PRODUCT_GROUPS = [
+  {
+    label: "Skincare",
+    href: "/shop?category=skincare",
+    links: ["Cleansers", "Toners", "Serums", "Moisturizers", "Sunscreen", "Face Masks", "Eye Care"],
+  },
+  {
+    label: "Bodycare",
+    href: "/shop?category=bodycare",
+    links: ["Body Lotions", "Body Oils", "Body Scrubs", "Body Butters", "Deodorants"],
+  },
+  {
+    label: "Shower & Bath",
+    href: "/shop?category=bodycare",
+    links: ["Shower Gels", "Bath Soaps", "Bath Scrubs", "Body Wash"],
+  },
+  {
+    label: "Haircare",
+    href: "/shop?category=haircare",
+    links: ["Shampoos", "Conditioners", "Hair Oils", "Hair Treatments"],
+  },
+  {
+    label: "Wellness",
+    href: "/shop?category=wellness",
+    links: ["Vitamins", "Gummies", "Collagen", "Beauty Supplements"],
+  },
+  {
+    label: "Beauty Essentials",
+    href: "/shop?category=makeup",
+    links: ["Lip Care", "Makeup", "Beauty Tools", "Accessories"],
+  },
+];
+
+const subcategoryHref = (href: string, label: string) => `${href}&q=${encodeURIComponent(label)}`;
+
+const FEATURED_CATEGORY_GROUPS = [
+  PRODUCT_GROUPS[0],
+  PRODUCT_GROUPS[1],
+  PRODUCT_GROUPS[3],
+  { label: "Makeup", href: "/shop?category=makeup", links: ["Lip Care", "Makeup", "Beauty Tools", "Accessories"] },
 ];
 
 export default function Navbar() {
@@ -55,15 +88,42 @@ export default function Navbar() {
         </Link>
 
         <nav className="hidden items-center gap-8 lg:flex">
-          {NAV_LINKS.map((link) => (
-            <Link
-              key={link.label}
-              href={link.href}
-              className="text-[13px] font-semibold tracking-wide text-black/85 transition-colors hover:text-brand-blue"
-            >
-              {link.label.toUpperCase()}
-            </Link>
+          <Link href="/" className="text-[13px] font-semibold tracking-wide text-black/85 transition-colors hover:text-brand-blue">
+            HOME
+          </Link>
+          <Link href="/shop" className="text-[13px] font-semibold tracking-wide text-black/85 transition-colors hover:text-brand-blue">
+            SHOP
+          </Link>
+          {FEATURED_CATEGORY_GROUPS.map((group) => (
+            <div key={group.label} className="group relative py-6">
+              <Link
+                href={group.href}
+                className="flex items-center gap-1.5 text-[13px] font-semibold tracking-wide text-black/85 transition-colors hover:text-brand-blue"
+              >
+                {group.label.toUpperCase()}
+                <svg viewBox="0 0 12 12" className="h-3 w-3 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" strokeWidth="1.5">
+                  <path d="M2 4l4 4 4-4" />
+                </svg>
+              </Link>
+              <div className="invisible absolute left-1/2 top-full z-50 w-56 -translate-x-1/2 translate-y-2 border border-line/15 bg-white p-5 opacity-0 shadow-xl transition-all duration-200 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100 group-focus-within:visible group-focus-within:translate-y-0 group-focus-within:opacity-100">
+                <Link href={group.href} className="font-display text-base font-semibold text-ink hover:text-brand-blue">
+                  Shop All {group.label}
+                </Link>
+                <ul className="mt-4 space-y-2.5 border-t border-line/15 pt-4">
+                  {group.links.map((link) => (
+                    <li key={link}>
+                      <Link href={subcategoryHref(group.href, link)} className="text-xs text-ink/65 transition-colors hover:text-brand-blue">
+                        {link}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
           ))}
+          <Link href="/shop?category=deals" className="text-[13px] font-semibold tracking-wide text-black/85 transition-colors hover:text-brand-blue">
+            DEALS
+          </Link>
         </nav>
 
         <div className="flex items-center gap-1 sm:gap-2">
@@ -159,21 +219,8 @@ export default function Navbar() {
               <Link href="/" onClick={() => setMenuOpen(false)} className="text-sm font-semibold tracking-wide">
                 HOME
               </Link>
-              <Link href="/shop" onClick={() => setMenuOpen(false)} className="text-sm font-semibold tracking-wide">
-                SHOP ALL
-              </Link>
-              {CATEGORY_LIST.map((cat) => (
-                <Link
-                  key={cat}
-                  href={`/shop?category=${cat}`}
-                  onClick={() => setMenuOpen(false)}
-                  className="text-sm font-medium text-white/75"
-                >
-                  {CATEGORY_LABELS[cat]}
-                </Link>
-              ))}
-              <Link href="/shop?category=deals" onClick={() => setMenuOpen(false)} className="text-sm font-semibold text-brand-blue">
-                DEALS
+              <Link href="/shop" onClick={() => setMenuOpen(false)} className="text-sm font-semibold tracking-wide text-brand-blue">
+                SHOP
               </Link>
               <div className="my-2 h-px bg-white/10" />
               <Link href="/account" onClick={() => setMenuOpen(false)} className="text-sm text-white/75">

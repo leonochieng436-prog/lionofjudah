@@ -4,9 +4,9 @@ const PRODUCT_CATALOG: Product[] = [
   // SKINCARE
   {
     id: "p01",
-    slug: "radiant-glow-vitamin-c-serum",
-    brand: "Judah Botanicals",
-    name: "Radiant Glow Vitamin C Serum",
+    slug: "the-ordinary-aha-30-bha-2-peeling-solution",
+    brand: "The Ordinary",
+    name: "The Ordinary AHA 30% + BHA 2% Peeling Solution",
     category: "skincare",
     price: 2800,
     oldPrice: 3500,
@@ -16,23 +16,25 @@ const PRODUCT_CATALOG: Product[] = [
     badges: ["BEST SELLER", "SALE"],
     image: "/images/products/ahabhatheordinary.jpg",
     description:
-      "A fast-absorbing brightening serum with 15% stabilised vitamin C, built to even out tone and fade the look of dark spots over time.",
-    benefits: [
-      "Visibly brightens and evens skin tone",
-      "Softens the look of dark spots and scarring",
-      "Antioxidant protection against daily environmental stress",
-      "Lightweight, non-greasy finish under makeup",
-    ],
-    ingredients:
-      "Aqua, 15% Ascorbic Acid, Ferulic Acid, Vitamin E, Hyaluronic Acid, Glycerin, Panthenol.",
-    howToUse:
-      "Apply 3–4 drops to clean, dry skin every morning before moisturiser and SPF. Patch test before first use.",
-  },
+  "A powerful at-home exfoliating peel combining 30% AHAs and 2% BHAs to resurface the skin, improve the look of uneven texture, and reveal a brighter, smoother-looking complexion.",
+
+benefits: [
+  "Visibly improves uneven skin texture",
+  "Helps reduce the appearance of blemishes and clogged pores",
+  "Brightens the look of dull, uneven skin",
+  "Helps smooth rough areas and improve skin radiance",
+],
+
+ingredients:
+  "Glycolic Acid, Lactic Acid, Tartaric Acid, Citric Acid, Salicylic Acid, Hyaluronic Acid, Tasmanian Pepperberry Derivative.",
+
+howToUse:
+  "Apply a thin, even layer to clean, completely dry skin, avoiding the eye and lip areas. Leave on for no more than 10 minutes, then rinse thoroughly with lukewarm water. Use no more than once or twice a week, preferably in the evening. Patch test before first use and always use SPF during the day."  },
   {
     id: "p02",
-    slug: "hydra-renew-snail-mucin-essence",
-    brand: "Nuru Beauty",
-    name: "Hydra-Renew Snail Mucin Essence",
+    slug: "dr-rashel-aloe-vera-facial-cleanser",
+    brand: "Dr.Rashel",
+    name: "Dr. Rashel Aloe Vera Facial Cleanser",
     category: "skincare",
     price: 2600,
     oldPrice: 3200,
@@ -42,21 +44,25 @@ const PRODUCT_CATALOG: Product[] = [
     badges: ["SALE"],
     image: "/images/products/aloecleanser.jpg",
    description:
-      "A 96% snail secretion filtrate essence that deeply hydrates, repairs the moisture barrier and leaves skin plump and dewy.",
-    benefits: [
-      "Deep, lasting hydration",
-      "Supports barrier repair and skin recovery",
-      "Improves texture and softens fine lines",
-      "Fragrance-free, suitable for sensitive skin",
-    ],
-    ingredients: "Snail Secretion Filtrate 96%, Betaine, Sodium Hyaluronate, Panthenol, Arginine.",
-    howToUse: "Pat 2–3 pumps onto skin after cleansing and toning, morning and night.",
-  },
+  "A gentle aloe vera facial cleanser designed to remove dirt, excess oil, and daily impurities while helping the skin feel fresh, clean, and comfortably hydrated.",
+
+benefits: [
+  "Gently cleanses away dirt, oil, and impurities",
+  "Helps leave skin feeling fresh and refreshed",
+  "Helps maintain a soft and comfortable skin feel",
+  "Aloe vera helps support a hydrated-looking complexion",
+],
+
+ingredients:
+  "Aloe Vera Extract, Aqua, Glycerin, Cocamidopropyl Betaine, Sodium Chloride, Fragrance, and cleansing agents.",
+
+howToUse:
+  "Wet your face with lukewarm water and apply a small amount of cleanser to your hands. Gently massage over the face in circular motions, avoiding the eye area. Rinse thoroughly and pat dry. Use morning and evening."  },
   {
     id: "p03",
-    slug: "charcoal-clay-detox-mask",
-    brand: "Zawadi Naturals",
-    name: "Charcoal Clay Detox Mask",
+    slug: "dr.rashel-aloe-vera-moisturizing-cream",
+    brand: "Dr.Rashel",
+    name: "Dr. Rashel Aloe Vera Moisturizing Cream",
     category: "skincare",
     price: 1800,
     rating: 4.5,
@@ -65,21 +71,25 @@ const PRODUCT_CATALOG: Product[] = [
     badges: ["NEW"],
     image: "/images/products/aloemoisturizer.jpg",
     description:
-      "An activated-charcoal and kaolin clay mask that draws out impurities and excess oil for a clearer, mattified complexion.",
-    benefits: [
-      "Deep-cleans congested pores",
-      "Controls shine and excess oil",
-      "Softens skin texture",
-      "10-minute weekly treatment",
-    ],
-    ingredients: "Activated Charcoal, Kaolin Clay, Bentonite Clay, Aloe Vera, Tea Tree Oil.",
-    howToUse: "Apply an even layer to clean skin, avoiding the eye area. Leave for 10 minutes and rinse with warm water. Use 1–2 times weekly.",
-  },
+  "A lightweight aloe vera moisturizer formulated to hydrate and soothe the skin while helping maintain a soft, smooth, and refreshed-looking complexion.",
+
+benefits: [
+  "Helps replenish moisture and prevent a dry, tight feeling",
+  "Soothes and refreshes the look of the skin",
+  "Leaves skin feeling soft, smooth, and comfortable",
+  "Lightweight texture suitable for everyday skincare routines",
+],
+
+ingredients:
+  "Aloe Vera Extract, Aqua, Glycerin, Hyaluronic Acid, Vitamin E, Panthenol, Emollients, and moisturizing agents.",
+
+howToUse:
+  "Apply a small amount to clean, dry skin after cleansing and serums. Gently massage over the face and neck until fully absorbed. Use morning and evening. During the day, follow with sunscreen."  },
   {
     id: "p04",
-    slug: "overnight-retinol-recovery-cream",
-    brand: "Lion of Judah",
-    name: "Overnight Retinol Recovery Cream",
+    slug: "dr-rashel-aloe-vera-serum",
+    brand: "Dr.Rashel",
+    name: "Dr. Rashel Aloe Vera Serum",
     category: "skincare",
     price: 3400,
     rating: 4.9,
@@ -88,22 +98,26 @@ const PRODUCT_CATALOG: Product[] = [
     badges: ["BEST SELLER"],
     image: "/images/products/aloeserumrashel.jpg",
     description:
-      "A gentle encapsulated-retinol night cream that supports cell renewal while you sleep, waking up to visibly smoother skin.",
-    benefits: [
-      "Supports overnight skin renewal",
-      "Softens the look of fine lines",
-      "Rich, barrier-supporting formula",
-      "Non-irritating encapsulated retinol",
-    ],
-    ingredients: "Encapsulated Retinol, Squalane, Shea Butter, Ceramides, Niacinamide.",
-    howToUse: "Apply a pea-sized amount to the face at night after cleansing. Start 2–3 times weekly and build up tolerance. Always wear SPF by day.",
-  },
+  "A lightweight aloe vera facial serum designed to replenish moisture, soothe the skin, and leave the complexion feeling soft, refreshed, and hydrated.",
+
+benefits: [
+  "Helps boost hydration and reduce the feeling of dryness",
+  "Soothes and refreshes the look of stressed skin",
+  "Helps maintain a soft and smooth-looking complexion",
+  "Lightweight texture that layers easily with moisturiser",
+],
+
+ingredients:
+  "Aloe Vera Extract, Aqua, Glycerin, Hyaluronic Acid, Panthenol, Vitamin E, and skin-conditioning agents.",
+
+howToUse:
+  "Apply 2–3 drops to clean, dry skin after cleansing and toning. Gently pat or massage into the face and neck until absorbed. Follow with moisturiser and SPF during the day. Use morning and evening. Patch test before first use."  },
   {
     id: "p05",
-    slug: "niacinamide-10-zinc-serum",
-    brand: "Simba Skin Co.",
-    name: "Niacinamide 10% + Zinc 1% Serum",
-    category: "skincare",
+    slug: "dr-rashel-aloe-vera-toner",
+    brand: "Dr.Rashel",
+    name: "Dr. Rashel Aloe Vera Toner",
+    category: "bodycare",
     price: 1450,
     rating: 4.6,
     reviewsCount: 301,
@@ -111,70 +125,83 @@ const PRODUCT_CATALOG: Product[] = [
     badges: [],
     image: "/images/products/aloetoner.jpg",
     description:
-      "A high-strength niacinamide serum that visibly reduces the appearance of blemishes and balances congested, oily skin.",
-    benefits: [
-      "Reduces the look of enlarged pores",
-      "Balances oil production",
-      "Visibly clears blemish-prone skin",
-      "Lightweight, quick-absorbing texture",
-    ],
-    ingredients: "Niacinamide 10%, Zinc PCA 1%, Aqua, Glycerin, Tamarindus Indica Seed Gum.",
-    howToUse: "Apply a few drops to face morning and evening after cleansing, before heavier creams.",
-  },
+  "A refreshing aloe vera toner designed to gently condition the skin after cleansing while helping replenish moisture and leave the complexion feeling fresh, soft, and balanced.",
+
+benefits: [
+  "Helps refresh and hydrate the skin after cleansing",
+  "Soothes the look of dry and stressed skin",
+  "Helps leave skin feeling soft and comfortable",
+  "Prepares the skin for serums and moisturisers",
+],
+
+ingredients:
+  "Aloe Vera Extract, Aqua, Glycerin, Panthenol, Hyaluronic Acid, Vitamin E, and skin-conditioning agents.",
+
+howToUse:
+  "After cleansing, apply a small amount to clean skin using your hands or a cotton pad. Gently pat into the face and neck until absorbed. Follow with serum and moisturiser. Use morning and evening."  },
   {
     id: "p06",
-    slug: "rose-quartz-hydrating-toner",
-    brand: "Judah Botanicals",
-    name: "Rose Quartz Hydrating Toner",
-    category: "skincare",
+    slug: "batana-oil-conditioner",
+    brand: "Batana",
+    name: "Batana Oil Conditioner",
+    category: "haircare",
     price: 1600,
     oldPrice: 2000,
     rating: 4.4,
     reviewsCount: 58,
     stock: 4,
     badges: ["SALE", "LOW STOCK"],
-    image: "/images/products/asgel.jpg",
+    image: "/images/products/batanaconditioner.jpg",
     description:
-      "An alcohol-free rosewater toner that preps skin for serums while delivering a light veil of hydration and calm.",
-    benefits: [
-      "Preps skin to absorb serums better",
-      "Soothes and refreshes on contact",
-      "Alcohol-free, non-drying formula",
-    ],
-    ingredients: "Rosa Damascena Flower Water, Glycerin, Aloe Barbadensis Leaf Juice, Panthenol.",
-    howToUse: "Sweep across the face with a cotton pad or press in with hands after cleansing.",
-  },
+  "A nourishing hair conditioner enriched with Batana Oil to help moisturise, soften, and smooth dry, rough-looking hair while improving manageability and leaving hair feeling healthier and more conditioned.",
+
+benefits: [
+  "Helps nourish and moisturise dry, thirsty hair",
+  "Softens hair and improves smoothness",
+  "Helps reduce the appearance of dryness and frizz",
+  "Makes hair easier to detangle and manage",
+],
+
+ingredients:
+  "Aqua, Batana Oil, Glycerin, Cetearyl Alcohol, Behentrimonium Chloride, Coconut Oil, Shea Butter, Panthenol, Fragrance, and conditioning agents.",
+
+howToUse:
+  "After shampooing, apply a generous amount of conditioner to clean, damp hair, focusing on the mid-lengths and ends. Leave on for 2–5 minutes, then rinse thoroughly. Use regularly for best conditioning results."  },
 
   // BODYCARE
   {
     id: "p07",
-    slug: "shea-cocoa-body-butter",
-    brand: "Zawadi Naturals",
-    name: "Shea & Cocoa Body Butter",
+    slug: "as-nail-polish-gel",
+    brand: "Roniki",
+    name: "AS Nail Polish Gel",
     category: "bodycare",
     price: 1900,
     rating: 4.8,
     reviewsCount: 234,
     stock: 64,
     badges: ["BEST SELLER"],
-    image: "/images/products/batanaconditioner.jpg",
+    image: "/images/products/asgel.jpg",
    description:
-      "A rich whipped butter blending raw shea and cocoa butter to seal in moisture for up to 48 hours of softness.",
-    benefits: [
-      "Deeply nourishes dry, thirsty skin",
-      "Long-lasting softness, up to 48 hours",
-      "Rich, fast-melting texture",
-      "Sealed with a light, warm scent",
-    ],
-    ingredients: "Shea Butter, Cocoa Butter, Coconut Oil, Vitamin E, Sweet Almond Oil.",
-    howToUse: "Scoop a small amount and massage into skin after showering while still slightly damp.",
-  },
+  "A vibrant gel nail polish designed to deliver rich, even color with a smooth, glossy finish. Its long-lasting formula helps create salon-quality nails with a polished, professional look.",
+
+benefits: [
+  "Provides rich, vibrant color with a glossy finish",
+  "Helps create smooth and professional-looking nails",
+  "Long-lasting finish when properly cured",
+  "Ideal for creating salon-quality manicures at home or professionally",
+],
+
+ingredients:
+  "Acrylates Copolymer, Isobornyl Methacrylate, Hydroxyethyl Methacrylate, Photoinitiators, Pigments, and UV/LED-curable gel ingredients.",
+
+howToUse:
+  "Prepare and clean the nails, then apply a thin layer of base coat and cure according to the lamp instructions. Apply a thin, even layer of AS Gel Nail Polish and cure under a compatible UV/LED lamp. Apply a second coat if desired and cure again. Finish with a gel top coat for added shine and durability."  },
   {
     id: "p08",
-    slug: "coffee-bean-exfoliating-scrub",
-    brand: "Amani Wellness",
-    name: "Coffee Bean Exfoliating Scrub",
-    category: "bodycare",
+    slug: "batana-oil-cream",
+    brand: "Batana",
+    name: "Batana OilCream",
+    category: "haircare",
     price: 1600,
     rating: 4.6,
     reviewsCount: 87,
@@ -183,20 +210,25 @@ const PRODUCT_CATALOG: Product[] = [
     image: "/images/products/batanacream.jpg",
 
     description:
-      "A firming coffee and brown sugar scrub that buffs away dry, dull skin and leaves a smooth, energised finish.",
-    benefits: [
-      "Buffs away dry, flaky skin",
-      "Supports smoother-looking skin over time",
-      "Invigorating coffee aroma",
-    ],
-    ingredients: "Coffea Arabica (Coffee) Seed Powder, Brown Sugar, Coconut Oil, Vitamin E.",
-    howToUse: "Massage onto damp skin in circular motions 2–3 times weekly, then rinse thoroughly.",
-  },
+  "A nourishing Batana Oil cream formulated to moisturise and soften the skin while helping improve the look and feel of dry, rough areas for a smoother, more supple-looking complexion.",
+
+benefits: [
+  "Helps deeply moisturise dry and rough-looking skin",
+  "Leaves skin feeling soft, smooth, and supple",
+  "Helps nourish and condition the skin",
+  "Provides a comfortable, non-drying feel for everyday use",
+],
+
+ingredients:
+  "Aqua, Batana Oil, Glycerin, Shea Butter, Cetearyl Alcohol, Coconut Oil, Vitamin E, Panthenol, Fragrance, and skin-conditioning agents.",
+
+howToUse:
+  "Apply a generous amount to clean, dry skin and gently massage until fully absorbed. Pay extra attention to dry areas such as elbows, knees, and hands. Use daily or whenever the skin feels dry."  },
   {
     id: "p09",
-    slug: "cocoa-radiance-body-oil",
-    brand: "Lion of Judah",
-    name: "Cocoa Radiance Body Oil",
+    slug: "collagen-with-burn",
+    brand: "Winstown",
+    name: "Collagen with Burn",
     category: "bodycare",
     price: 2200,
     rating: 4.7,
@@ -206,21 +238,26 @@ const PRODUCT_CATALOG: Product[] = [
     image: "/images/products/collagenburn.jpg",
 
     description:
-      "A fast-absorbing dry oil that leaves skin with a soft, luminous sheen without any greasy residue.",
-    benefits: [
-      "Non-greasy, fast-absorbing finish",
-      "Leaves a natural, luminous glow",
-      "Light cocoa fragrance",
-    ],
-    ingredients: "Sweet Almond Oil, Jojoba Oil, Theobroma Cacao (Cocoa) Extract, Vitamin E.",
-    howToUse: "Massage a few drops over damp or dry skin, focusing on elbows, knees and legs.",
-  },
+  "A convenient collagen-based wellness supplement formulated to support beauty from within while complementing an active lifestyle and daily wellness routine.",
+
+benefits: [
+  "Supports healthy-looking skin and overall skin wellness",
+  "Helps support collagen intake as part of a balanced diet",
+  "Convenient daily supplement for beauty and wellness routines",
+  "Designed to complement an active and healthy lifestyle",
+],
+
+ingredients:
+  "Hydrolyzed Collagen Peptides, Vitamin C, and selected vitamins, minerals, or botanical ingredients depending on the product formulation.",
+
+howToUse:
+  "Take the recommended serving according to the product label. Mix with water or your preferred beverage if applicable. Use consistently as part of a balanced diet and healthy lifestyle. Do not exceed the recommended daily serving."  },
   {
     id: "p10",
-    slug: "whipped-mango-body-cream",
-    brand: "Nuru Beauty",
-    name: "Whipped Mango Body Cream",
-    category: "bodycare",
+    slug: "cosrx-advanced-snail-92-all-in-one-cream",
+    brand: "Cosrx",
+    name: "COSRX Advanced Snail 92 All In One Cream",
+    category: "skincare",
     price: 1750,
     oldPrice: 2100,
     rating: 4.5,
@@ -229,23 +266,28 @@ const PRODUCT_CATALOG: Product[] = [
     image: "/images/products/cosrxcream1.jpg",
     badges: ["SALE"],
     description:
-      "A light, fluffy body cream with mango butter that sinks in quickly for everyday hydration with a fruity finish.",
-    benefits: [
-      "Quick-absorbing, all-day hydration",
-      "Light, fluffy whipped texture",
-      "Fresh mango scent",
-    ],
-    ingredients: "Mango Seed Butter, Glycerin, Aqua, Vitamin E, Sunflower Seed Oil.",
-    howToUse: "Apply generously all over the body after bathing.",
-  },
+  "A rich yet lightweight moisturizing cream formulated with 92% snail mucin to deeply hydrate, soothe, and support a smooth, healthy-looking complexion while helping improve the appearance of dryness and skin irritation.",
+
+benefits: [
+  "Provides long-lasting hydration and helps reduce dryness",
+  "Helps soothe and comfort stressed-looking skin",
+  "Supports a smoother, softer-looking complexion",
+  "Helps improve the appearance of dull and uneven-looking skin",
+],
+
+ingredients:
+  "Snail Secretion Filtrate (92%), Betaine, Glycerin, Sodium Hyaluronate, Panthenol, Allantoin, Arginine, Carbomer, and skin-conditioning ingredients.",
+
+howToUse:
+  "After cleansing, toning, and applying your serum, apply an appropriate amount to the face and neck. Gently pat or massage until fully absorbed. Use morning and evening. During the day, finish with sunscreen."  },
 
   // HAIRCARE
   {
     id: "p11",
-    slug: "rice-water-strengthening-shampoo",
-    brand: "Kesi & Co",
-    name: "Rice Water Strengthening Shampoo",
-    category: "haircare",
+    slug: "cosrx-hyaluronic-acid-intensive-cream",
+    brand: "Cosrx",
+    name: "COSRX Hyaluronic Acid Intensive Cream",
+    category: "skincare",
     price: 1500,
     rating: 4.6,
     reviewsCount: 190,
@@ -253,21 +295,26 @@ const PRODUCT_CATALOG: Product[] = [
     badges: ["BEST SELLER"],
     image: "/images/products/cosrxhyaluronic1.jpg",
     description:
-      "A sulphate-free shampoo infused with fermented rice water to gently cleanse while strengthening strands from root to tip.",
-    benefits: [
-      "Gently cleanses without stripping",
-      "Strengthens hair and reduces breakage",
-      "Sulphate-free and colour-safe",
-    ],
-    ingredients: "Fermented Rice Water, Aqua, Coco-Glucoside, Panthenol, Biotin.",
-    howToUse: "Massage into wet hair and scalp, lather, then rinse thoroughly. Follow with conditioner.",
-  },
+  "A rich, deeply moisturizing cream formulated with hyaluronic acid and skin-nourishing ingredients to replenish moisture, strengthen the skin's moisture barrier, and leave dry skin feeling soft, smooth, and comfortably hydrated.",
+
+benefits: [
+  "Provides intense and lasting hydration",
+  "Helps replenish moisture and reduce the feeling of dryness",
+  "Supports a healthy-looking skin moisture barrier",
+  "Leaves skin feeling soft, smooth, and supple",
+],
+
+ingredients:
+  "Hippophae Rhamnoides Water, Hippophae Rhamnoides Oil, Glycerin, Sodium Hyaluronate, Panthenol, Betaine, Allantoin, Macadamia Integrifolia Seed Oil, and skin-conditioning ingredients.",
+
+howToUse:
+  "After cleansing and applying toner or serum, apply an appropriate amount evenly over the face and neck. Gently pat or massage until fully absorbed. Use morning and evening. During the day, follow with sunscreen."  },
   {
     id: "p12",
-    slug: "rice-water-repair-conditioner",
-    brand: "Kesi & Co",
-    name: "Rice Water Repair Conditioner",
-    category: "haircare",
+    slug: "cosrx-low-ph-good-morning-gel-cleanser",
+    brand: "Cosrx",
+    name: "COSRX Low pH Good Morning Gel Cleanser",
+    category: "skincare",
     price: 1500,
     rating: 4.6,
     reviewsCount: 165,
@@ -275,21 +322,26 @@ const PRODUCT_CATALOG: Product[] = [
     badges: [],
     image: "/images/products/cosrxlowphcleanser.jpg",
     description:
-      "A deeply conditioning pair to the Rice Water Shampoo, smoothing the cuticle and detangling with ease.",
-    benefits: [
-      "Smooths and detangles",
-      "Seals in moisture and shine",
-      "Reduces breakage from brushing",
-    ],
-    ingredients: "Fermented Rice Water, Cetearyl Alcohol, Behentrimonium Chloride, Panthenol.",
-    howToUse: "Apply from mid-length to ends after shampooing. Leave for 2–3 minutes and rinse.",
-  },
+  "A gentle low-pH gel cleanser designed to effectively remove daily impurities, excess oil, and makeup residue while helping maintain the skin's natural moisture balance for a fresh, clean, and comfortable finish.",
+
+benefits: [
+  "Gently removes dirt, excess oil, and daily impurities",
+  "Helps cleanse without leaving the skin feeling overly dry",
+  "Supports the skin's natural moisture balance",
+  "Leaves the complexion feeling fresh, clean, and smooth",
+],
+
+ingredients:
+  "Melaleuca Alternifolia (Tea Tree) Leaf Oil, Saccharomyces Ferment, Betaine Salicylate, Cocamidopropyl Betaine, Sodium Lauroyl Methyl Isethionate, Glycerin, Allantoin, and skin-conditioning ingredients.",
+
+howToUse:
+  "Wet your face with lukewarm water and apply a small amount of cleanser to your hands. Gently massage over the face in circular motions, avoiding the eye area. Rinse thoroughly and pat dry. Use morning and evening, then follow with toner, serum, and moisturiser."  },
   {
     id: "p13",
-    slug: "castor-biotin-growth-oil",
-    brand: "Judah Botanicals",
-    name: "Castor & Biotin Growth Oil",
-    category: "haircare",
+    slug: "cosrx-salicylic-acid-daily-gentle-cleanser",
+    brand: "Cosrx",
+    name: "COSRX Salicylic Acid Daily Gentle Cleanser",
+    category: "skincare",
     price: 1300,
     oldPrice: 1600,
     rating: 4.9,
@@ -298,21 +350,26 @@ const PRODUCT_CATALOG: Product[] = [
     badges: ["SALE", "BEST SELLER"],
     image: "/images/products/cosrxsalicylic1.jpg",
     description:
-      "A scalp-nourishing blend of Jamaican black castor oil and biotin, formulated to support fuller, healthier-looking hair.",
-    benefits: [
-      "Nourishes the scalp",
-      "Supports the look of fuller, thicker hair",
-      "Adds shine and softness",
-    ],
-    ingredients: "Jamaican Black Castor Oil, Biotin, Rosemary Oil, Peppermint Oil, Jojoba Oil.",
-    howToUse: "Massage into the scalp 2–3 times weekly, or apply to lengths and ends to seal moisture.",
-  },
+  "A gentle yet effective facial cleanser formulated with salicylic acid to remove excess oil, impurities, and buildup while helping keep pores looking clearer and the skin feeling fresh and smooth.",
+
+benefits: [
+  "Helps remove excess oil and daily impurities",
+  "Helps unclog and refine the appearance of pores",
+  "Supports clearer-looking skin and helps reduce the appearance of blemishes",
+  "Leaves the skin feeling clean, refreshed, and smooth",
+],
+
+ingredients:
+  "Salicylic Acid, Tea Tree Oil, Cocamidopropyl Betaine, Glycerin, Sodium Lauroyl Methyl Isethionate, Citric Acid, and skin-conditioning ingredients.",
+
+howToUse:
+  "Wet your face with lukewarm water and apply a small amount of cleanser to your hands. Gently massage over the face, avoiding the eye and lip areas. Rinse thoroughly and pat dry. Use once or twice daily depending on your skin's tolerance. Follow with toner, moisturiser, and SPF during the day."  },
   {
     id: "p14",
-    slug: "silk-protein-leave-in-cream",
-    brand: "Lion of Judah",
-    name: "Silk Protein Leave-In Cream",
-    category: "haircare",
+    slug: "cosrx-advanced-snail-96-mucin-power-essence",
+    brand: "Cosrx",
+    name: "COSRX Advanced Snail 96 Mucin Power Essence",
+    category: "skincare",
     price: 1650,
     rating: 4.4,
     reviewsCount: 63,
@@ -320,22 +377,27 @@ const PRODUCT_CATALOG: Product[] = [
     badges: ["NEW"],
     image: "/images/products/cosrxtonerPoweressence1.jpg",
     description:
-      "A lightweight leave-in cream with silk amino acids that defines, softens and controls frizz without weigh-down.",
-    benefits: [
-      "Controls frizz and flyaways",
-      "Softens and adds definition",
-      "Lightweight, no product build-up",
-    ],
-    ingredients: "Hydrolysed Silk Protein, Aqua, Shea Butter, Glycerin, Argan Oil.",
-    howToUse: "Apply to damp hair from mid-length to ends before styling.",
-  },
+  "A lightweight, hydrating essence formulated with 96.3% snail secretion filtrate to deeply moisturise, soothe, and support a healthy-looking skin barrier while helping improve the appearance of dull, dry, and uneven skin.",
+
+benefits: [
+  "Provides intense hydration without a heavy feel",
+  "Helps soothe and comfort dry or stressed-looking skin",
+  "Supports a stronger, healthier-looking skin barrier",
+  "Helps improve the appearance of dull and uneven skin",
+],
+
+ingredients:
+  "Snail Secretion Filtrate (96.3%), Betaine, Glycerin, Sodium Hyaluronate, Panthenol, Allantoin, Arginine, and skin-conditioning ingredients.",
+
+howToUse:
+  "After cleansing and toning, apply 1–2 pumps of the essence evenly to the face and neck. Gently pat into the skin until fully absorbed. Follow with serum and moisturiser. Use morning and evening. During the day, finish with sunscreen."  },
 
   // WELLNESS
   {
     id: "p15",
-    slug: "lavender-calm-roll-on",
-    brand: "Amani Wellness",
-    name: "Lavender Calm Roll-On",
+    slug: "flat-tummy-gummies",
+    brand: "winstown",
+    name: "Flat Tummy Gummies",
     category: "wellness",
     price: 950,
     rating: 4.7,
@@ -344,21 +406,26 @@ const PRODUCT_CATALOG: Product[] = [
     badges: [],
     image: "/images/products/flattummygummies.jpg",
     description:
-      "A pocket-sized aromatherapy roll-on blending lavender and chamomile essential oils for on-the-go calm.",
-    benefits: [
-      "Soothing, portable aromatherapy",
-      "Convenient roll-on application",
-      "Blended with skin-safe carrier oils",
-    ],
-    ingredients: "Lavandula Angustifolia Oil, Chamomilla Recutita Oil, Fractionated Coconut Oil.",
-    howToUse: "Roll onto pulse points — wrists, temples and neck — as needed.",
-  },
+  "A convenient daily wellness gummy formulated to complement a healthy lifestyle and support digestive wellness. Easy to take and suitable for adding to your everyday self-care routine.",
+
+benefits: [
+  "Supports everyday digestive wellness",
+  "Convenient and easy-to-take gummy format",
+  "Helps complement a balanced diet and active lifestyle",
+  "A simple addition to your daily wellness routine",
+],
+
+ingredients:
+  "Apple Cider Vinegar, Pectin, Natural Flavouring, Citric Acid, Sweeteners, and selected vitamins or botanical ingredients depending on the product formulation.",
+
+howToUse:
+  "Take the recommended serving indicated on the product label. Chew thoroughly and use consistently as part of a balanced diet and healthy lifestyle. Do not exceed the recommended daily serving."  },
   {
     id: "p16",
-    slug: "collagen-beauty-gummies",
-    brand: "Amani Wellness",
-    name: "Collagen Beauty Gummies",
-    category: "wellness",
+    slug: "glycolic-acid-7-exfoliating-toner",
+    brand: "The Ordinary",
+    name: "The Ordinary Glycolic Acid 7% Exfoliating Toner",
+    category: "skincare",
     price: 2400,
     rating: 4.5,
     reviewsCount: 121,
@@ -366,19 +433,24 @@ const PRODUCT_CATALOG: Product[] = [
     badges: ["NEW"],
     image: "/images/products/glycolictheordinary.jpg",
     description:
-      "Daily beauty gummies with marine collagen, biotin and vitamin C to support skin, hair and nail wellness from within.",
-    benefits: [
-      "Supports skin elasticity from within",
-      "Contains biotin for hair and nails",
-      "Easy daily gummy format",
-    ],
-    ingredients: "Marine Collagen Peptides, Biotin, Vitamin C, Vitamin E, Pectin.",
-    howToUse: "Take two gummies daily, with or without food.",
-  },
+  "A daily exfoliating toner formulated with 7% glycolic acid to gently remove dead skin cells, improve the look of uneven texture, and reveal a smoother, brighter, and more radiant-looking complexion.",
+
+benefits: [
+  "Helps exfoliate dead skin cells and improve skin texture",
+  "Brightens the appearance of dull, uneven skin",
+  "Helps smooth the look of rough skin",
+  "Supports a more radiant and refined-looking complexion",
+],
+
+ingredients:
+  "Aqua, Glycolic Acid, Rosa Damascena Flower Water, Centaurea Cyanus Flower Water, Aloe Barbadensis Leaf Water, Amino Acids, Ginseng Root Extract, and Tasmanian Pepperberry Derivative.",
+
+howToUse:
+  "Apply a small amount to clean, dry skin using a cotton pad or your hands, avoiding the eye area. Use once daily, preferably in the evening. Do not combine with other strong exfoliating acids or retinoids in the same routine. Always use sunscreen during the day and patch test before first use."  },
   {
     id: "p17",
     slug: "detox-herbal-tea-blend",
-    brand: "Lion of Judah",
+    brand: "Dr.Rashel",
     name: "Detox Herbal Tea Blend",
     category: "wellness",
     price: 1100,
@@ -395,10 +467,10 @@ const PRODUCT_CATALOG: Product[] = [
   },
   {
     id: "p18",
-    slug: "magnesium-sleep-mist",
-    brand: "Judah Botanicals",
-    name: "Magnesium Sleep Mist",
-    category: "wellness",
+    slug: "medicube-pdrn-pink-peptide-volumizing-collagen-capsule-cream",
+    brand: "Medicube",
+    name: "Medicube PDRN Pink Peptide Volumizing Collagen Capsule Cream",
+    category: "skincare",
     price: 1350,
     oldPrice: 1600,
     rating: 4.6,
@@ -407,19 +479,28 @@ const PRODUCT_CATALOG: Product[] = [
     badges: ["SALE"],
     image: "/images/products/medicubecream.jpg",
     description:
-      "A calming pillow and body mist combining magnesium with lavender and cedarwood to wind down before bed.",
-    benefits: ["Part of a calming wind-down ritual", "Lavender and cedarwood aroma", "Alcohol-free mist"],
-    ingredients: "Magnesium Chloride, Aqua, Lavandula Oil, Cedarwood Oil, Glycerin.",
-    howToUse: "Mist lightly over pillows and skin 15 minutes before bed.",
-  },
+  "A luxurious collagen capsule cream designed to deliver intensive hydration and nourishment while helping improve the appearance of firmness, elasticity, and skin texture for a plump, smooth, and radiant-looking complexion.",
+
+benefits: [
+  "Provides deep and lasting hydration",
+  "Helps improve the appearance of skin firmness and elasticity",
+  "Supports a plumper, smoother-looking complexion",
+  "Helps nourish and enhance the appearance of dull, tired-looking skin",
+],
+
+ingredients:
+  "Hydrolyzed Collagen, Niacinamide, Glycerin, Hyaluronic Acid, Adenosine, Peptides, Panthenol, and skin-conditioning ingredients.",
+
+howToUse:
+  "After cleansing and applying toner or serum, apply an appropriate amount evenly over the face and neck. Gently massage until the cream and capsules are fully absorbed. Use morning and evening as the final step of your skincare routine. During the day, finish with sunscreen."  },
 
   // MAKEUP
   {
     id: "p19",
-    slug: "velvet-matte-liquid-lipstick",
-    brand: "Adaeze Naturals",
-    name: "Velvet Matte Liquid Lipstick",
-    category: "makeup",
+    slug: "medicube-zero-pore-mild-cleansing-foam",
+    brand: "Medicube",
+    name: "Medicube Zero Pore Mild Cleansing Foam",
+    category: "skincare",
     price: 1400,
     rating: 4.7,
     reviewsCount: 210,
@@ -428,17 +509,26 @@ const PRODUCT_CATALOG: Product[] = [
     image: "/images/products/medicubemild.jpg",
 
     description:
-      "A long-wearing, transfer-resistant liquid lipstick that dries down to a soft-focus matte finish in one swipe.",
-    benefits: ["Up to 8 hours of wear", "Transfer-resistant matte finish", "Comfortable, non-drying formula"],
-    ingredients: "Dimethicone, Isododecane, Silica, Vitamin E, Iron Oxides.",
-    howToUse: "Apply from the centre of the lips outward. Let dry for 60 seconds without rubbing.",
-  },
+  "A gentle daily cleansing foam designed to effectively remove dirt, excess oil, and impurities while helping keep pores looking clean and the skin feeling fresh, smooth, and comfortable.",
+
+benefits: [
+  "Gently removes dirt, excess oil, and daily impurities",
+  "Helps keep pores looking clean and refined",
+  "Cleanses without leaving the skin feeling overly dry",
+  "Leaves skin feeling fresh, soft, and comfortably clean",
+],
+
+ingredients:
+  "Water, Glycerin, Cocamidopropyl Betaine, Sodium Lauroyl Methyl Isethionate, Panthenol, Allantoin, and skin-conditioning ingredients.",
+
+howToUse:
+  "Wet your face with lukewarm water and apply a small amount of cleanser to your hands. Work into a rich lather and gently massage over the face, avoiding the eye area. Rinse thoroughly and pat dry. Use morning and evening, followed by toner, serum, and moisturiser."  },
   {
     id: "p20",
-    slug: "featherweight-foundation-spf30",
-    brand: "Adaeze Naturals",
-    name: "Featherweight Foundation SPF 30",
-    category: "makeup",
+    slug: "medicube-pdrn-pink-peptide-serum",
+    brand: "Medicube",
+    name: "Medicube PDRN Pink Peptide Serum",
+    category: "skincare",
     price: 2600,
     rating: 4.8,
     reviewsCount: 267,
@@ -446,15 +536,24 @@ const PRODUCT_CATALOG: Product[] = [
     badges: ["BEST SELLER"],
     image: "/images/products/medicubeserum.jpg",
     description:
-      "A buildable, skin-like foundation with SPF 30 that evens out tone while letting natural texture show through.",
-    benefits: ["Buildable, natural-finish coverage", "Broad-spectrum SPF 30 protection", "Available across 24 shades"],
-    ingredients: "Aqua, Titanium Dioxide (SPF), Dimethicone, Glycerin, Niacinamide.",
-    howToUse: "Apply with a brush, sponge or fingertips, building coverage where needed.",
-  },
+  "A lightweight, hydrating serum formulated with PDRN and skin-supporting peptides to help improve the appearance of firmness, elasticity, and uneven texture while leaving the complexion looking plump, smooth, and radiant.",
+
+benefits: [
+  "Helps improve the appearance of skin firmness and elasticity",
+  "Provides lightweight, long-lasting hydration",
+  "Helps support a smoother and more supple-looking complexion",
+  "Enhances the appearance of dull, tired-looking skin",
+],
+
+ingredients:
+  "PDRN (Sodium DNA), Niacinamide, Peptides, Glycerin, Hyaluronic Acid, Panthenol, Adenosine, and skin-conditioning ingredients.",
+
+howToUse:
+  "After cleansing and toning, apply an appropriate amount evenly over the face and neck. Gently pat or massage into the skin until fully absorbed. Follow with moisturiser. Use morning and evening, and apply sunscreen as the final step of your morning routine."  },
   {
     id: "p21",
     slug: "radiant-skin-tint",
-    brand: "Nuru Beauty",
+    brand: "Cosrx",
     name: "Radiant Skin Tint",
     category: "makeup",
     price: 2100,
@@ -472,10 +571,10 @@ const PRODUCT_CATALOG: Product[] = [
   },
   {
     id: "p22",
-    slug: "sculpt-glow-bronzer-duo",
-    brand: "Lion of Judah",
-    name: "Sculpt & Glow Bronzer Duo",
-    category: "makeup",
+    slug: "medicube-collagen-night-wrapping-mask",
+    brand: "Medicube",
+    name: "Medicube Collagen Night Wrapping Mask",
+    category: "skincare",
     price: 1900,
     rating: 4.6,
     reviewsCount: 132,
@@ -483,19 +582,29 @@ const PRODUCT_CATALOG: Product[] = [
     image: "/images/products/miellemasque.jpg",
     badges: [],
     description:
-      "A two-tone bronzer and highlighter duo designed to sculpt and lift with a soft, natural-looking glow.",
-    benefits: ["Sculpts and warms the complexion", "Soft, blendable powder formula", "Buildable highlight finish"],
-    ingredients: "Talc, Mica, Dimethicone, Silica, Iron Oxides.",
-    howToUse: "Buff the bronzer along cheekbones and jawline. Tap the highlighter onto high points of the face.",
-  },
+  "A nourishing overnight wrapping mask designed to provide intensive hydration while helping improve the appearance of firmness, elasticity, and skin texture. It forms a comfortable moisture-locking layer to leave skin looking plump, smooth, and refreshed by morning.",
+
+benefits: [
+  "Provides intensive overnight hydration",
+  "Helps lock in moisture and reduce the appearance of dryness",
+  "Supports a plumper, smoother-looking complexion",
+  "Helps improve the appearance of skin firmness and elasticity",
+],
+
+ingredients:
+  "Hydrolyzed Collagen, Glycerin, Hyaluronic Acid, Niacinamide, Adenosine, Peptides, Panthenol, and skin-conditioning ingredients.",
+
+howToUse:
+  "As the final step of your evening skincare routine, apply an even layer over the face, avoiding the eye and lip areas. Allow the mask to dry and form a comfortable film before going to bed. Leave on overnight and gently peel or rinse off in the morning according to the product instructions. Use 2–3 times per week or as needed."
+ },
 
   // FRAGRANCE
   {
     id: "p23",
-    slug: "amber-oud-eau-de-parfum",
-    brand: "Lion of Judah",
-    name: "Amber & Oud Eau de Parfum",
-    category: "fragrance",
+    slug: "mielle-rosemary-mint-strengthening-shampoo",
+    brand: "Mielle",
+    name: "Mielle Rosemary Mint Strengthening Shampoo",
+    category: "haircare",
     price: 4500,
     rating: 4.9,
     reviewsCount: 188,
@@ -503,17 +612,26 @@ const PRODUCT_CATALOG: Product[] = [
     image: "/images/products/mielleshampoo.jpg",
     badges: ["BEST SELLER"],
     description:
-      "A signature warm, woody fragrance built around amber and oud with a soft musk dry-down that lasts all day.",
-    benefits: ["Long-lasting, 8+ hour wear", "Warm amber and oud signature", "50ml eau de parfum concentration"],
-    ingredients: "Alcohol Denat., Parfum, Amber Accord, Oud Accord, Musk.",
-    howToUse: "Spray onto pulse points — wrists and neck — after showering.",
-  },
+  "A refreshing strengthening shampoo formulated with rosemary and mint to gently cleanse the scalp and hair while helping remove buildup, excess oil, and impurities. It leaves hair feeling clean, refreshed, and nourished.",
+
+benefits: [
+  "Gently cleanses the scalp and removes buildup",
+  "Helps strengthen and condition the feel of the hair",
+  "Leaves the scalp feeling fresh and invigorated",
+  "Helps maintain soft, manageable, and healthy-looking hair",
+],
+
+ingredients:
+  "Water, Biotin, Rosemary Leaf Extract, Peppermint Oil, Coconut Oil, Babassu Oil, Honey, and other cleansing and conditioning ingredients.",
+
+howToUse:
+  "Wet hair thoroughly and apply a generous amount of shampoo to the scalp and hair. Gently massage into the scalp to create a rich lather, then rinse thoroughly. Follow with conditioner. Use regularly as part of your haircare routine."  },
   {
     id: "p24",
-    slug: "wild-jasmine-body-mist",
-    brand: "Judah Botanicals",
-    name: "Wild Jasmine Body Mist",
-    category: "fragrance",
+    slug: "the-ordinary-natural-moisturizing-factors-ha",
+    brand: "The Ordinary",
+    name: "The Ordinary Natural Moisturizing Factors + HA",
+    category: "skincare",
     price: 1200,
     rating: 4.4,
     reviewsCount: 71,
@@ -521,17 +639,26 @@ const PRODUCT_CATALOG: Product[] = [
     image: "/images/products/moisturizingfactor.jpg",
     badges: ["NEW"],
     description:
-      "A light, layerable body mist with fresh jasmine and white musk, perfect for everyday spritzing.",
-    benefits: ["Light, everyday layering scent", "Refreshing jasmine and musk", "200ml — generous, spray-happy size"],
-    ingredients: "Aqua, Alcohol Denat., Parfum, Jasminum Officinale Extract.",
-    howToUse: "Mist generously over body after bathing, reapply as needed.",
-  },
+  "A lightweight yet nourishing daily moisturizer formulated with skin-identical moisturizing factors, amino acids, ceramides, and hyaluronic acid to replenish hydration and support a healthy-looking skin barrier while leaving skin soft and smooth.",
+
+benefits: [
+  "Provides immediate and lasting hydration",
+  "Helps support and strengthen the skin's moisture barrier",
+  "Helps reduce the appearance of dryness and rough texture",
+  "Leaves skin feeling soft, smooth, and comfortably moisturised",
+],
+
+ingredients:
+  "Amino Acids, Ceramides, Hyaluronic Acid, Glycerin, Phospholipids, Fatty Acids, Urea, Saccharide Isomerate, and other skin-identical moisturizing factors.",
+
+howToUse:
+  "Apply a small amount to clean, dry skin after serums and other water-based treatments. Gently massage into the face and neck until fully absorbed. Use morning and evening. During the day, follow with sunscreen."  },
   {
     id: "p25",
-    slug: "citrus-bloom-eau-de-toilette",
-    brand: "Zawadi Naturals",
-    name: "Citrus Bloom Eau de Toilette",
-    category: "fragrance",
+    slug: "the-ordinary-niacinamide-10-zinc-1",
+    brand: "The Ordinary",
+    name: "The Ordinary Niacinamide 10% + Zinc 1%",
+    category: "skincare",
     price: 3200,
     oldPrice: 3800,
     rating: 4.6,
@@ -540,19 +667,28 @@ const PRODUCT_CATALOG: Product[] = [
     badges: ["SALE"],
     image: "/images/products/niacinamidetheordinary.jpg",
     description:
-      "A bright, uplifting citrus fragrance with notes of bergamot and neroli, finished with a soft floral heart.",
-    benefits: ["Bright, energising citrus opening", "Soft floral heart", "35ml eau de toilette"],
-    ingredients: "Alcohol Denat., Parfum, Bergamot Oil, Neroli Extract, Musk.",
-    howToUse: "Spray onto pulse points, avoiding direct sunlight on freshly sprayed skin.",
-  },
+  "A lightweight, water-based serum formulated with 10% niacinamide and 1% zinc PCA to help improve the appearance of blemishes, excess oil, enlarged pores, and uneven skin tone while supporting a smoother, clearer-looking complexion.",
+
+benefits: [
+  "Helps reduce the appearance of blemishes and skin congestion",
+  "Helps control the look of excess oil",
+  "Minimizes the appearance of enlarged pores",
+  "Supports a smoother and more even-looking skin tone",
+],
+
+ingredients:
+  "Aqua, Niacinamide (10%), Zinc PCA (1%), Tamarindus Indica Seed Gum, Pentylene Glycol, Dimethyl Isosorbide, and skin-conditioning ingredients.",
+
+howToUse:
+  "Apply a few drops to clean, dry skin after cleansing and toning, before moisturiser. Gently spread over the face and neck until absorbed. Use morning and evening. During the day, follow with sunscreen. Patch test before first use."  },
 
   // BEAUTY TOOLS
   {
     id: "p26",
-    slug: "jade-facial-roller-gua-sha-set",
-    brand: "Lion of Judah",
-    name: "Jade Facial Roller & Gua Sha Set",
-    category: "beauty-tools",
+    slug: "dr-rashel-brightening-anti-aging-vitamin-c-niacinamide-hyaluronic-serum",
+    brand: "Dr.Rashel",
+    name: "Dr. Rashel Brightening Anti-Aging Vitamin C + Niacinamide + Hyaluronic Serum",
+    category: "skincare",
     price: 1500,
     rating: 4.7,
     reviewsCount: 143,
@@ -560,17 +696,26 @@ const PRODUCT_CATALOG: Product[] = [
     image: "/images/products/rashel3in1.jpg",
     badges: ["BEST SELLER"],
     description:
-      "A genuine jade roller and gua sha set designed to support your skincare routine with a cooling, de-puffing massage.",
-    benefits: ["Supports lymphatic-style facial massage", "Cooling jade surface", "Pairs well with facial oils and serums"],
-    ingredients: "Natural Jade Stone.",
-    howToUse: "Roll or glide gently upward and outward across the face after applying serum or oil.",
-  },
+  "A multi-action brightening and hydrating serum formulated with Vitamin C, Niacinamide, and Hyaluronic Acid to help improve the appearance of dullness, uneven skin tone, fine lines, and dehydration while leaving the complexion looking smoother, brighter, and more refreshed.",
+
+benefits: [
+  "Helps brighten the appearance of dull, tired-looking skin",
+  "Helps improve the look of uneven skin tone and dark spots",
+  "Provides lightweight hydration and helps maintain skin moisture",
+  "Supports a smoother, firmer, and more youthful-looking complexion",
+],
+
+ingredients:
+  "Vitamin C, Niacinamide, Hyaluronic Acid, Glycerin, Vitamin E, Panthenol, and skin-conditioning ingredients.",
+
+howToUse:
+  "After cleansing and toning, apply 2–3 drops evenly to the face and neck. Gently pat or massage into the skin until fully absorbed, then follow with moisturiser. Use morning and evening. During the day, finish with sunscreen. Patch test before first use."  },
   {
     id: "p27",
-    slug: "silicone-facial-cleansing-brush",
-    brand: "Nuru Beauty",
-    name: "Silicone Facial Cleansing Brush",
-    category: "beauty-tools",
+    slug: "dr-rashel-vitamin-c-face-cream-vc",
+    brand: "Dr.Rashel",
+    name: "Dr. Rashel Vitamin C Face Cream (VC)",
+    category: "skincare",
     price: 1200,
     rating: 4.3,
     reviewsCount: 52,
@@ -578,17 +723,26 @@ const PRODUCT_CATALOG: Product[] = [
     image: "/images/products/rashelfacecream.jpg",
     badges: ["NEW"],
     description:
-      "A soft-silicone, rechargeable cleansing brush that lifts away makeup and buildup for a deeper daily cleanse.",
-    benefits: ["Gentle, hygienic silicone bristles", "USB rechargeable", "Waterproof for shower use"],
-    ingredients: "Food-grade Silicone, ABS Plastic.",
-    howToUse: "Apply cleanser to damp skin, massage with the brush for 60 seconds, then rinse.",
-  },
+  "A nourishing Vitamin C face cream designed to hydrate and brighten the appearance of the skin while helping improve the look of dullness, uneven tone, and tired-looking complexion for a smoother, more radiant finish.",
+
+benefits: [
+  "Helps brighten the appearance of dull skin",
+  "Supports a more even-looking skin tone",
+  "Provides daily moisture for soft, smooth-feeling skin",
+  "Helps leave the complexion looking fresh and radiant",
+],
+
+ingredients:
+  "Vitamin C, Glycerin, Vitamin E, Hyaluronic Acid, Niacinamide, Aloe Vera Extract, Panthenol, and skin-conditioning ingredients.",
+
+howToUse:
+  "Apply an appropriate amount to clean, dry skin after serum. Gently massage over the face and neck until fully absorbed. Use morning and evening. During the day, follow with sunscreen for additional protection."  },
   {
     id: "p28",
-    slug: "rose-gold-makeup-brush-set-12pc",
-    brand: "Lion of Judah",
-    name: "Rose Gold Makeup Brush Set (12pc)",
-    category: "beauty-tools",
+    slug: "dr-rashel-vitamin-c-vc-serum",
+    brand: "Dr.Rashel",
+    name: "Dr. Rashel Vitamin C (VC) Serum",
+    category: "skincare",
     price: 2800,
     oldPrice: 3400,
     rating: 4.8,
@@ -597,11 +751,21 @@ const PRODUCT_CATALOG: Product[] = [
     image: "/images/products/rashelserumvc.jpg",
     badges: ["SALE", "LOW STOCK"],
     description:
-      "A complete 12-piece brush set with soft synthetic bristles for flawless base, eye and contour application.",
-    benefits: ["Full face and eye brush coverage", "Soft, cruelty-free synthetic bristles", "Comes with a travel case"],
-    ingredients: "Synthetic Fibre Bristles, Aluminium Ferrule, Wooden Handle.",
-    howToUse: "Use the labelled guide on the case to match each brush to its ideal step in your routine.",
-  },
+  "A lightweight Vitamin C facial serum formulated to brighten the appearance of dull skin, improve the look of uneven tone and dark spots, and support a smoother, more radiant-looking complexion.",
+
+benefits: [
+  "Helps brighten dull and tired-looking skin",
+  "Helps improve the appearance of uneven skin tone and dark spots",
+  "Supports a smoother and more radiant-looking complexion",
+  "Provides lightweight hydration without a heavy finish",
+],
+
+ingredients:
+  "Vitamin C, Niacinamide, Hyaluronic Acid, Glycerin, Vitamin E, Panthenol, and skin-conditioning ingredients.",
+
+howToUse:
+  "After cleansing and toning, apply 2–3 drops evenly to the face and neck. Gently pat or massage into the skin until absorbed, then follow with moisturiser. Use morning and evening. During the day, apply sunscreen as the final step. Patch test before first use."  },
+  
 ];
 
 const CATEGORY_IMAGES: Record<Product["category"], string> = {
