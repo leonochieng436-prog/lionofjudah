@@ -71,7 +71,7 @@ export default function ProductGrid({ products, horizontal = false }: { products
         {products.map((product) => (
           <div
             key={product.id}
-            className="w-[72vw] shrink-0 snap-start sm:w-[42vw] lg:w-[calc((100%-3.75rem)/4)]"
+            className="w-[62vw] shrink-0 snap-start sm:w-[34vw] lg:w-[calc((100%-3.75rem)/4)]"
           >
             <ProductCard product={product} />
           </div>

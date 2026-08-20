@@ -17,7 +17,7 @@ export default function ProductCard({ product }: { product: Product }) {
 
   return (
     <div className="group relative flex flex-col border border-line/20 bg-white transition-shadow hover:shadow-card">
-      <div className="relative aspect-[4/5] w-full overflow-hidden sm:aspect-[4/5]">
+      <div className="relative aspect-square w-full overflow-hidden">
         <Link href={`/product/${product.slug}`} className="block h-full w-full">
           <PlaceholderImage
             image={product.image}
@@ -60,7 +60,7 @@ export default function ProductCard({ product }: { product: Product }) {
         </button>
       </div>
 
-      <div className="flex min-w-0 flex-1 flex-col gap-1.5 p-3 sm:gap-2 sm:p-3.5">
+      <div className="flex min-w-0 flex-1 flex-col gap-1.5 p-2.5 sm:gap-2 sm:p-3">
         <span className="truncate text-[10px] font-semibold uppercase tracking-wide text-muted sm:text-[11px]">
           {product.brand}
         </span>

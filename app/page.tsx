@@ -30,7 +30,7 @@ export default function HomePage() {
       <Brands />
       <PromoBanner />
       <WhyShopWithUs />
-      <BeautyEdit />
+      
       <Reviews />
    
       

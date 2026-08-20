@@ -765,7 +765,303 @@ ingredients:
 
 howToUse:
   "After cleansing and toning, apply 2–3 drops evenly to the face and neck. Gently pat or massage into the skin until absorbed, then follow with moisturiser. Use morning and evening. During the day, apply sunscreen as the final step. Patch test before first use."  },
+ 
   
+  //beauty tools ---modify this part
+{
+    id: "p29",
+    slug: "roniki-base-coat",
+    brand: "Roniki",
+    name: "Roniki Base Coat",
+    category: "beauty-tools",
+    price: 2800,
+    oldPrice: 3400,
+    rating: 4.8,
+    reviewsCount: 176,
+    stock: 6,
+    image: "/images/products/ronikibasecoat.jpg",
+    badges: ["SALE", "LOW STOCK"],
+    description:
+  "A lightweight Vitamin C facial serum formulated to brighten the appearance of dull skin, improve the look of uneven tone and dark spots, and support a smoother, more radiant-looking complexion.",
+
+benefits: [
+  "Helps brighten dull and tired-looking skin",
+  "Helps improve the appearance of uneven skin tone and dark spots",
+  "Supports a smoother and more radiant-looking complexion",
+  "Provides lightweight hydration without a heavy finish",
+],
+
+ingredients:
+  "Vitamin C, Niacinamide, Hyaluronic Acid, Glycerin, Vitamin E, Panthenol, and skin-conditioning ingredients.",
+
+howToUse:
+  "After cleansing and toning, apply 2–3 drops evenly to the face and neck. Gently pat or massage into the skin until absorbed, then follow with moisturiser. Use morning and evening. During the day, apply sunscreen as the final step. Patch test before first use."  },
+
+
+{
+    id: "p30",
+    slug: "roniki-top-coat",
+    brand: "Roniki",
+    name: "Roniki Top Coat",
+    category: "beauty-tools",
+    price: 2800,
+    oldPrice: 3400,
+    rating: 4.8,
+    reviewsCount: 176,
+    stock: 6,
+    image: "/images/products/ronikitopcoat.jpg",
+    badges: ["SALE", "LOW STOCK"],
+    description:
+  "A lightweight Vitamin C facial serum formulated to brighten the appearance of dull skin, improve the look of uneven tone and dark spots, and support a smoother, more radiant-looking complexion.",
+
+benefits: [
+  "Helps brighten dull and tired-looking skin",
+  "Helps improve the appearance of uneven skin tone and dark spots",
+  "Supports a smoother and more radiant-looking complexion",
+  "Provides lightweight hydration without a heavy finish",
+],
+
+ingredients:
+  "Vitamin C, Niacinamide, Hyaluronic Acid, Glycerin, Vitamin E, Panthenol, and skin-conditioning ingredients.",
+
+howToUse:
+  "After cleansing and toning, apply 2–3 drops evenly to the face and neck. Gently pat or massage into the skin until absorbed, then follow with moisturiser. Use morning and evening. During the day, apply sunscreen as the final step. Patch test before first use."  },
+
+{
+    id: "p31",
+    slug: "7in1-buffer",
+    brand: "Roniki",
+    name: "7in1 Buffer",
+    category: "beauty-tools",
+    price: 2800,
+    oldPrice: 3400,
+    rating: 4.8,
+    reviewsCount: 176,
+    stock: 6,
+    image: "/images/nails/7in1buffer.jpg",
+    badges: ["SALE", "LOW STOCK"],
+    description:
+  "A lightweight Vitamin C facial serum formulated to brighten the appearance of dull skin, improve the look of uneven tone and dark spots, and support a smoother, more radiant-looking complexion.",
+
+benefits: [
+  "Helps brighten dull and tired-looking skin",
+  "Helps improve the appearance of uneven skin tone and dark spots",
+  "Supports a smoother and more radiant-looking complexion",
+  "Provides lightweight hydration without a heavy finish",
+],
+
+ingredients:
+  "Vitamin C, Niacinamide, Hyaluronic Acid, Glycerin, Vitamin E, Panthenol, and skin-conditioning ingredients.",
+
+howToUse:
+  "After cleansing and toning, apply 2–3 drops evenly to the face and neck. Gently pat or massage into the skin until absorbed, then follow with moisturiser. Use morning and evening. During the day, apply sunscreen as the final step. Patch test before first use."  },
+{
+    id: "p32",
+    slug: "401-nail-glue",
+    brand: "Roniki",
+    name: "401 nail glue",
+    category: "beauty-tools",
+    price: 2800,
+    oldPrice: 3400,
+    rating: 4.8,
+    reviewsCount: 176,
+    stock: 6,
+    image: "/images/nails/401glue.jpg",
+    badges: ["SALE", "LOW STOCK"],
+    description:
+  "A lightweight Vitamin C facial serum formulated to brighten the appearance of dull skin, improve the look of uneven tone and dark spots, and support a smoother, more radiant-looking complexion.",
+
+benefits: [
+  "Helps brighten dull and tired-looking skin",
+  "Helps improve the appearance of uneven skin tone and dark spots",
+  "Supports a smoother and more radiant-looking complexion",
+  "Provides lightweight hydration without a heavy finish",
+],
+
+ingredients:
+  "Vitamin C, Niacinamide, Hyaluronic Acid, Glycerin, Vitamin E, Panthenol, and skin-conditioning ingredients.",
+
+howToUse:
+  "After cleansing and toning, apply 2–3 drops evenly to the face and neck. Gently pat or massage into the skin until absorbed, then follow with moisturiser. Use morning and evening. During the day, apply sunscreen as the final step. Patch test before first use."  },
+
+{
+    id: "p33",
+    slug: "block-buffer",
+    brand: "Roniki",
+    name: "Block Buffer",
+    category: "beauty-tools",
+    price: 2800,
+    oldPrice: 3400,
+    rating: 4.8,
+    reviewsCount: 176,
+    stock: 6,
+    image: "/images/nails/blockbuffer.jpg",
+    badges: ["SALE", "LOW STOCK"],
+    description:
+  "A lightweight Vitamin C facial serum formulated to brighten the appearance of dull skin, improve the look of uneven tone and dark spots, and support a smoother, more radiant-looking complexion.",
+
+benefits: [
+  "Helps brighten dull and tired-looking skin",
+  "Helps improve the appearance of uneven skin tone and dark spots",
+  "Supports a smoother and more radiant-looking complexion",
+  "Provides lightweight hydration without a heavy finish",
+],
+
+ingredients:
+  "Vitamin C, Niacinamide, Hyaluronic Acid, Glycerin, Vitamin E, Panthenol, and skin-conditioning ingredients.",
+
+howToUse:
+  "After cleansing and toning, apply 2–3 drops evenly to the face and neck. Gently pat or massage into the skin until absorbed, then follow with moisturiser. Use morning and evening. During the day, apply sunscreen as the final step. Patch test before first use."  },
+
+
+  {
+    id: "p34",
+    slug: "builder-gel",
+    brand: "Roniki",
+    name: "Builder Gel",
+    category: "skincare",
+    price: 2800,
+    oldPrice: 3400,
+    rating: 4.8,
+    reviewsCount: 176,
+    stock: 6,
+    image: "/images/nails/builder1.jpg",
+    badges: ["SALE", "LOW STOCK"],
+    description:
+  "A lightweight Vitamin C facial serum formulated to brighten the appearance of dull skin, improve the look of uneven tone and dark spots, and support a smoother, more radiant-looking complexion.",
+
+benefits: [
+  "Helps brighten dull and tired-looking skin",
+  "Helps improve the appearance of uneven skin tone and dark spots",
+  "Supports a smoother and more radiant-looking complexion",
+  "Provides lightweight hydration without a heavy finish",
+],
+
+ingredients:
+  "Vitamin C, Niacinamide, Hyaluronic Acid, Glycerin, Vitamin E, Panthenol, and skin-conditioning ingredients.",
+
+howToUse:
+  "After cleansing and toning, apply 2–3 drops evenly to the face and neck. Gently pat or massage into the skin until absorbed, then follow with moisturiser. Use morning and evening. During the day, apply sunscreen as the final step. Patch test before first use."  },
+
+
+{
+    id: "p35",
+    slug: "builder-gel",
+    brand: "Roniki",
+    name: "Builder Gel",
+    category: "skincare",
+    price: 2800,
+    oldPrice: 3400,
+    rating: 4.8,
+    reviewsCount: 176,
+    stock: 6,
+    image: "/images/nails/builder2.jpg",
+    badges: ["SALE", "LOW STOCK"],
+    description:
+  "A lightweight Vitamin C facial serum formulated to brighten the appearance of dull skin, improve the look of uneven tone and dark spots, and support a smoother, more radiant-looking complexion.",
+
+benefits: [
+  "Helps brighten dull and tired-looking skin",
+  "Helps improve the appearance of uneven skin tone and dark spots",
+  "Supports a smoother and more radiant-looking complexion",
+  "Provides lightweight hydration without a heavy finish",
+],
+
+ingredients:
+  "Vitamin C, Niacinamide, Hyaluronic Acid, Glycerin, Vitamin E, Panthenol, and skin-conditioning ingredients.",
+
+howToUse:
+  "After cleansing and toning, apply 2–3 drops evenly to the face and neck. Gently pat or massage into the skin until absorbed, then follow with moisturiser. Use morning and evening. During the day, apply sunscreen as the final step. Patch test before first use."  },
+
+
+  {
+    id: "p34",
+    slug: "nail-drill",
+    brand: "Roniki",
+    name: "Nail Drill",
+    category: "beauty-tools",
+    price: 2800,
+    oldPrice: 3400,
+    rating: 4.8,
+    reviewsCount: 176,
+    stock: 6,
+    image: "/images/nails/drill.jpg",
+    badges: ["SALE", "LOW STOCK"],
+    description:
+  "A lightweight Vitamin C facial serum formulated to brighten the appearance of dull skin, improve the look of uneven tone and dark spots, and support a smoother, more radiant-looking complexion.",
+
+benefits: [
+  "Helps brighten dull and tired-looking skin",
+  "Helps improve the appearance of uneven skin tone and dark spots",
+  "Supports a smoother and more radiant-looking complexion",
+  "Provides lightweight hydration without a heavy finish",
+],
+
+ingredients:
+  "Vitamin C, Niacinamide, Hyaluronic Acid, Glycerin, Vitamin E, Panthenol, and skin-conditioning ingredients.",
+
+howToUse:
+  "After cleansing and toning, apply 2–3 drops evenly to the face and neck. Gently pat or massage into the skin until absorbed, then follow with moisturiser. Use morning and evening. During the day, apply sunscreen as the final step. Patch test before first use."  },
+
+  {
+    id: "p35",
+    slug: "sun-19-uv-machine",
+    brand: "Roniki",
+    name: "Sun 19 Uv Machine",
+    category: "beauty-tools",
+    price: 2800,
+    oldPrice: 3400,
+    rating: 4.8,
+    reviewsCount: 176,
+    stock: 6,
+    image: "/images/nails/sun19.jpg",
+    badges: ["SALE", "LOW STOCK"],
+    description:
+  "A lightweight Vitamin C facial serum formulated to brighten the appearance of dull skin, improve the look of uneven tone and dark spots, and support a smoother, more radiant-looking complexion.",
+
+benefits: [
+  "Helps brighten dull and tired-looking skin",
+  "Helps improve the appearance of uneven skin tone and dark spots",
+  "Supports a smoother and more radiant-looking complexion",
+  "Provides lightweight hydration without a heavy finish",
+],
+
+ingredients:
+  "Vitamin C, Niacinamide, Hyaluronic Acid, Glycerin, Vitamin E, Panthenol, and skin-conditioning ingredients.",
+
+howToUse:
+  "After cleansing and toning, apply 2–3 drops evenly to the face and neck. Gently pat or massage into the skin until absorbed, then follow with moisturiser. Use morning and evening. During the day, apply sunscreen as the final step. Patch test before first use."  },
+
+{
+    id: "p36",
+    slug: "uv-charger",
+    brand: "Roniki",
+    name: "Uv Charger",
+    category: "beauty-tools",
+    price: 2800,
+    oldPrice: 3400,
+    rating: 4.8,
+    reviewsCount: 176,
+    stock: 6,
+    image: "/images/nails/uvcharger.jpg",
+    badges: ["SALE", "LOW STOCK"],
+    description:
+  "A lightweight Vitamin C facial serum formulated to brighten the appearance of dull skin, improve the look of uneven tone and dark spots, and support a smoother, more radiant-looking complexion.",
+
+benefits: [
+  "Helps brighten dull and tired-looking skin",
+  "Helps improve the appearance of uneven skin tone and dark spots",
+  "Supports a smoother and more radiant-looking complexion",
+  "Provides lightweight hydration without a heavy finish",
+],
+
+ingredients:
+  "Vitamin C, Niacinamide, Hyaluronic Acid, Glycerin, Vitamin E, Panthenol, and skin-conditioning ingredients.",
+
+howToUse:
+  "After cleansing and toning, apply 2–3 drops evenly to the face and neck. Gently pat or massage into the skin until absorbed, then follow with moisturiser. Use morning and evening. During the day, apply sunscreen as the final step. Patch test before first use."  },
+
+
 ];
 
 const CATEGORY_IMAGES: Record<Product["category"], string> = {
